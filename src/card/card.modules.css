@@ -1,0 +1,25 @@
+.weather {
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.weather-head {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-qbdosj-Input > input {
+  color: #000000 !important;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

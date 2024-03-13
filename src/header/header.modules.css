@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header > h2 {
+  margin: 0;
+}
+
+.header > ul {
+  display: flex;
+  position: relative;
+}
+
+.header > ul > li {
+  position: relative;
+  top: 4px;
+  list-style: none;
+  font-size: 28px;
+}
+
+.header > ul > li > a {
+  padding: 12px 8px;
+  color: #ffffff;
+}
+
+.header > ul > li > a:hover {
+  color: #FF4848;
+}

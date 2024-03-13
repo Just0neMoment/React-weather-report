@@ -1,0 +1,32 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer > p > a {
+  text-decoration-line: none;
+  color: #FF4848;
+}
+
+.footer > p > a:hover {
+  font-weight: bold;
+}
+
+.footer-icon {
+  font-size: 20px;
+}
+
+.git {
+  display: flex;
+  align-items: center;
+}
+
+.git > .footer-icon {
+  margin-right: 4px;
+}
