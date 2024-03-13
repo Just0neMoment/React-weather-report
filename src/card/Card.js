@@ -11,6 +11,9 @@ import Loading from "../modal/Loading.js";
 import "./card.modules.css";
 
 function Card() {
+
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   let [loadingModal, setLoadingModal] = useState(true);
   let [weatherInfo, setWeatherInfo] = useState(null);
   let [selectedLocation, setSelectedLocation] = useState({
@@ -29,7 +32,7 @@ function Card() {
 
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ff1b3af9ad2f5acf021574b66f1b7892`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
       )
       .then((result) => {
         let weatherID = result.data.weather[0].id;
